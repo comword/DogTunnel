@@ -1,0 +1,22 @@
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- These settings headers are only used on tablets. -->
+
+    <header
+        android:fragment="org.gtdev.apps.dogtunnel.SettingsActivity$GeneralPreferenceFragment"
+        android:icon="@drawable/ic_settings_black_24dp"
+        android:title="@string/pref_header_general" />
+    <header
+        android:icon="@drawable/ic_logcat_black_24dp"
+        android:title="@string/header_logcat">
+        <intent android:targetPackage="org.gtdev.apps.dogtunnel"
+            android:targetClass="org.gtdev.apps.dogtunnel.LogcatShow" />
+    </header>
+    <header
+        android:icon="@drawable/ic_info_black_24dp"
+        android:title="@string/pref_header_about" >
+        <intent android:targetPackage="org.gtdev.apps.dogtunnel"
+            android:targetClass="org.gtdev.apps.dogtunnel.AboutActivity" />
+    </header>
+
+</preference-headers>

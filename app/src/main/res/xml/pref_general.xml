@@ -1,0 +1,40 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference
+        android:capitalize="none"
+        android:defaultValue="@string/pref_default_user_name"
+        android:inputType="text"
+        android:key="username"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="@string/pref_title_user_name" />
+
+    <EditTextPreference
+        android:password="true"
+        android:inputType="textPassword"
+        android:key="password"
+        android:title="@string/pref_title_pass" />
+
+    <org.gtdev.apps.dogtunnel.ServerAddrDialog
+            android:key="server_address"
+            android:title="@string/pref_title_address"
+            android:defaultValue="172.26.32.2" />
+    
+    <EditTextPreference
+        android:defaultValue="@string/pref_title_dns_server_def"
+        android:digits="0123456789."
+        android:inputType="number|numberDecimal"
+        android:key="dns_addr"
+        android:title="@string/pref_title_dns_server" />
+
+    <EditTextPreference
+        android:capitalize="none"
+        android:defaultValue="@string/pref_route_def"
+        android:inputType="text"
+        android:key="route"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:title="@string/pref_title_route" />
+
+</PreferenceScreen>
